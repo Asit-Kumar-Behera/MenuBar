@@ -1,0 +1,157 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+}
+<div id="container">
+	<div id="sidebar" class="sidebar-fixed">
+		<div id="sidebar-content">
+
+			<!--=== Navigation ===-->
+			<ul id="nav">
+
+				<li class="">
+					<a href="javascript:void(0);">
+						<i class="icon-male"></i>
+						Admin
+					</a>
+					<ul class="sub-menu">
+
+						@*<li class="current">
+							<a href="/Admission/ListTrialRegistration">
+								<i class="icon-angle-right"></i>
+								Trial Registration List
+							</a>
+						</li>*@
+						@Html.CreateSubMenu("/Admission/ListTrialRegistration", "Trial Registration List")
+						@*<li class="current">
+							<a href="/Admission/RegisteredStudents">
+								<i class="icon-angle-right"></i>
+								Register/Enroll
+							</a>
+						</li>*@
+						@Html.CreateSubMenu("/Admission/RegisteredStudents", "Register/Enroll")
+						@*<li class="current">
+							<a href="/Admission/StudentsList">
+								<i class="icon-angle-right"></i>
+								Students
+							</a>
+						</li>*@
+						@Html.CreateSubMenu("/Admission/StudentsList", "Students")
+					</ul>
+				</li>
+				<li class=" ">
+
+					<a href=" javascript:void(0);">
+						<i class="icon-edit"></i>
+						Staff
+					</a>
+					<ul class="sub-menu">
+						@*<li class="current || current">
+							<a href="/Course/CourseDetail">
+								<i class="icon-angle-right"></i>
+								Class
+							</a>
+						</li>*@
+						@Html.CreateSubMenu("/Course/CourseDetail", "Class")
+						@*<li class="current">
+							<a href="/Course/CourseAgeGroup">
+								<i class="icon-angle-right"></i>
+								Age Group
+							</a>
+						</li>*@
+						@Html.CreateSubMenu("/Course/CourseAgeGroup","Age Group")
+						@*<li class="current">
+							<a href="/Course/CourseAgeGroupBirthYear">
+								<i class="icon-angle-right"></i>
+								Academic Age Group
+							</a>
+						</li>*@
+						@Html.CreateSubMenu("/Course/CourseAgeGroupBirthYear", "Academic Age Group")
+						@*<li class="current">
+							<a href="/Course/Term">
+								<i class="icon-angle-right"></i>
+								Term
+							</a>
+						</li>*@
+						@Html.CreateSubMenu("/Course/Term", "Term")
+
+					</ul>
+				</li>
+				
+				<li class="">
+					<a href="#">
+						<i class="icon-table"></i>
+						Account
+					</a>
+					<ul class="sub-menu">
+						@*<li class="current">
+
+							<a href="/Fees/StudentFees">
+								<i class="icon-angle-right"></i>
+								Student Fees
+							</a>
+						</li>*@
+						@Html.CreateSubMenu("/Fees/StudentFees", "Student Fees")
+						@*<li class="current">
+							<a href="/Trial/TrialFees">
+								<i class="icon-angle-right"></i>
+								Trial Fees
+							</a>
+						</li>*@
+						@Html.CreateSubMenu("/Trial/TrialFees", "Trial Fees")
+					</ul>
+				</li>
+
+				<li class="">
+					<a href="#">
+						<i class="icon-table"></i>
+						Common
+					</a>
+					<ul class="sub-menu">
+						@*<li class="current">
+
+							<a href="/Setting/CountryList">
+								<i class="icon-angle-right"></i>
+								Country List
+							</a>
+						</li>*@
+						@Html.CreateCommonSubMenu("/Setting/CountryList", "Country List")
+						@*<li class="current">
+							<a href="/Setting/ReligionList">
+								<i class="icon-angle-right"></i>
+								Religion List
+							</a>
+						</li>*@
+						@Html.CreateCommonSubMenu("/Setting/ReligionList", "Religion List")
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="jumbotron">
+	<h1>ASP.NET</h1>
+	<p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+	<p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<h2>Getting started</h2>
+		<p>
+			ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+			enables a clean separation of concerns and gives you full control over markup
+			for enjoyable, agile development.
+		</p>
+		<p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+	</div>
+	<div class="col-md-4">
+		<h2>Get more libraries</h2>
+		<p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+		<p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+	</div>
+	<div class="col-md-4">
+		<h2>Web Hosting</h2>
+		<p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+		<p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+	</div>
+</div>
